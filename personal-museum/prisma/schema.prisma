@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Exhibit {
+  id          Int               @id @default(autoincrement())
+  title       String
+  description String?
+  year        Int?
+  imagePath   String
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  tags        TagsOnExhibits[]
+}
+
+model Tag {
+  id       Int               @id @default(autoincrement())
+  name     String            @unique
+  exhibits TagsOnExhibits[]
+}
+
+model TagsOnExhibits {
+  exhibit   Exhibit @relation(fields: [exhibitId], references: [id], onDelete: Cascade)
+  exhibitId Int
+  tag       Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  tagId     Int
+
+  @@id([exhibitId, tagId])
+  @@index([tagId])
+}
