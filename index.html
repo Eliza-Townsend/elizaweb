@@ -5,151 +5,214 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
-        <!-- Bootstrap Core CSS -->
+        <title>MyMuseum · archiving the ordinary</title>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/mymuseum.css" rel="stylesheet">
     </head>
-    <body id="page-top"> 
-        <!-- Navigation -->         
-
-        <a class="menu-toggle rounded" href="#"> <i class="fa fa-bars"></i> </a> 
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a class="js-scroll-trigger" href="#page-top">Eliza Townsend</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#page-top">Home</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="sidebar-nav-item">
-</li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="sidebar-nav-item">
-</li>
-            </ul>
-        </nav>         
-
-        <!-- Header -->         
-
-        <header class="masthead d-flex">
-            <div class="container text-center my-auto">
-                <h1 class="mb-1">Eliza Townsend</h1>
-                <h3 class="mb-5"> <em>Welcome to my Portfolio!</em> </h3>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn more</a>
-            </div>
-            <div class="overlay"></div>
-        </header>         
-
-        <!-- About -->         
-
-        <section class="content-section bg-light" id="about">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <h2>Hi there! I am a second year design student</h2>
-                        <p class="lead mb-5">I go to the University of Washington, and am currently passionately involved in studying and applying new design principles.</p>
-                    </div>
-                </div>
-            </div>
-        </section>         
-
-        <!-- Services -->                  
-
-        <!-- Callout -->         
-
-        <section class="callout">
-</section>         
-
-        <!-- Portfolio -->         
-
-        <section class="content-section" id="portfolio">
+    <body class="mymuseum">
+        <header class="hero">
             <div class="container">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
-                            <span class="caption"> <span class="caption-content"> <h2>Stationary</h2> <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p> </span> </span>
-                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                        </a>
+                <div class="hero__layout">
+                    <div class="hero__copy">
+                        <div class="hero__eyebrow">MyMuseum</div>
+                        <h1 class="hero__title">Archive the ordinary.<br>Celebrate your collections.</h1>
+                        <p class="hero__lead">Capture every artifact, catalog it in seconds, and build a living archive that grows with your curiosity.</p>
+                        <div class="hero__actions">
+                            <a href="#prototype" class="btn btn-primary btn-lg">View interactive prototype</a>
+                            <a href="#story" class="btn btn-outline-primary btn-lg">See the product story</a>
+                        </div>
+                        <ul class="hero__stats">
+                            <li><strong>5</strong> core flows · capture → classify → curate</li>
+                            <li><strong>20</strong> artifact templates with automatic metadata</li>
+                            <li><strong>∞</strong> ways to remix your personal museum</li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
-                            <span class="caption"> <span class="caption-content"> <h2>Ice Cream</h2> <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p> </span> </span>
-                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
-                            <span class="caption"> <span class="caption-content"> <h2>Strawberries</h2> <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p> </span> </span>
-                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
-                            <span class="caption"> <span class="caption-content"> <h2>Workspace</h2> <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p> </span> </span>
-                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                        </a>
+                    <div class="hero__visual">
+                        <div class="phone phone--collections">
+                            <div class="phone__notch"></div>
+                            <div class="phone__screen">
+                                <div class="mock-header">
+                                    <span>Archives</span>
+                                    <div class="mock-header__icons">
+                                        <span class="icon icon--search"></span>
+                                        <span class="icon icon--toggle"></span>
+                                    </div>
+                                </div>
+                                <div class="mock-sort">sort by: <strong>abc</strong> <span class="icon icon--calendar"></span></div>
+                                <ul class="mock-list">
+                                    <li>butterflies<span class="badge badge--pinned"></span></li>
+                                    <li>mugs<span class="badge"></span></li>
+                                    <li>action figures<span class="badge badge--fav"></span></li>
+                                    <li>antiques<span class="badge"></span></li>
+                                    <li>California trip<span class="badge"></span></li>
+                                    <li class="mock-pill">Project X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phone phone--detail">
+                            <div class="phone__notch"></div>
+                            <div class="phone__screen">
+                                <div class="mock-art">
+                                    <div class="butterfly butterfly--lg"></div>
+                                    <div class="butterfly-row">
+                                        <div class="butterfly"></div>
+                                        <div class="butterfly butterfly--sm"></div>
+                                        <div class="butterfly"></div>
+                                    </div>
+                                </div>
+                                <div class="mock-card">
+                                    <h2>Butterflies</h2>
+                                    <time>09·12·25</time>
+                                    <p>A collection of butterflies discovered along the California coast.</p>
+                                    <ol>
+                                        <li>Blue morpho</li>
+                                        <li>Skyway swallowtail</li>
+                                        <li>Seaside skipper</li>
+                                        <li>Gray monarch</li>
+                                        <li>Turquoise wanderer</li>
+                                    </ol>
+                                    <button class="mock-edit">edit</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>         
+        </header>
 
-        <!-- Call to Action -->         
+        <main>
+            <section class="feature-grid" id="story">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Everything has a story</h2>
+                        <p>MyMuseum organizes the artifacts that matter—from road-trip souvenirs to heirloom curiosities—so you can revisit places, people, and memories on any timeline.</p>
+                    </div>
+                    <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-4 col-md-6">
+                            <article class="feature-card">
+                                <h3>Collections view</h3>
+                                <p>Sort by tags, chronology, or favorites. Swipeable lists surface what you need with quick color-coded status chips.</p>
+                                <span class="feature-tag">archives</span>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <article class="feature-card">
+                                <h3>Chronological timeline</h3>
+                                <p>Grid and stack toggles help you scan how your collection evolved. Tap an artifact to open its living record.</p>
+                                <span class="feature-tag">timeline</span>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <article class="feature-card">
+                                <h3>Item card</h3>
+                                <p>Rich metadata, measurements, and personal notes keep each artifact grounded in place, materials, and meaning.</p>
+                                <span class="feature-tag">object cards</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Map -->         
+            <section class="phones" id="prototype">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Five flows, one museum</h2>
+                        <p>From documenting a find to browsing decades of discoveries, MyMuseum keeps every interaction focused on delight and clarity.</p>
+                    </div>
+                    <div class="phones__stack">
+                        <div class="stack-diagram">
+                            <ol>
+                                <li><span>Camera</span> Capture provenance and lighting cues instantly.</li>
+                                <li><span>Timeline</span> Drop new finds into a living chronological feed.</li>
+                                <li><span>Archives</span> Filter by collection, location, or mood.</li>
+                                <li><span>Object cards</span> Deep-dive into details, stories, and care notes.</li>
+                                <li><span>Collections</span> Curate exhibits for friends or future you.</li>
+                            </ol>
+                        </div>
+                        <div class="phones__gallery">
+                            <div class="phone phone--grid">
+                                <div class="phone__notch"></div>
+                                <div class="phone__screen">
+                                    <div class="mock-header">
+                                        <span>Artifacts</span>
+                                        <div class="mock-header__icons">
+                                            <span class="icon icon--grid"></span>
+                                            <span class="icon icon--bell"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-grid">
+                                        <div class="tile tile--figure"></div>
+                                        <div class="tile tile--butterfly"></div>
+                                        <div class="tile tile--vessel"></div>
+                                        <div class="tile tile--figure"></div>
+                                        <div class="tile tile--butterfly"></div>
+                                        <div class="tile tile--vessel tile--accent"></div>
+                                        <div class="tile tile--butterfly"></div>
+                                        <div class="tile tile--figure"></div>
+                                        <div class="tile tile--vessel"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone phone--card">
+                                <div class="phone__notch"></div>
+                                <div class="phone__screen">
+                                    <div class="mock-card mock-card--artifact">
+                                        <div class="figure"></div>
+                                        <div class="artifact-meta">
+                                            <div class="meta-headline">
+                                                <h3>Action Figure</h3>
+                                                <span class="meta-count">1/20</span>
+                                            </div>
+                                            <dl>
+                                                <div><dt>Location</dt><dd>Seattle, 2024</dd></div>
+                                                <div><dt>Material</dt><dd>Plastic, 6"</dd></div>
+                                                <div><dt>Catalogued</dt><dd>03·07·24 · 10:34 PM</dd></div>
+                                            </dl>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Footer -->         
+            <section class="cta">
+                <div class="container">
+                    <div class="cta__box">
+                        <div class="cta__badge">Beta 2025</div>
+                        <h2>Ready to build your personal museum?</h2>
+                        <p>Join the waitlist and be the first to test guided capture, smart tagging, and sharing tools custom-built for collectors.</p>
+                        <form class="cta__form">
+                            <label class="sr-only" for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <button type="submit">Join the waitlist</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <!-- Scroll to Top Button-->         
-
-        <section class="content-section bg-primary text-white">
-            <img src="/img/resume.jpg" class="mw-100 w-100 h-100">
-            <div class="container text-center">
-</div>
-        </section>
-        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"> <i class="fa fa-angle-up"></i> </a> 
-        <!-- Bootstrap core JavaScript -->         
-
-        <script src="vendor/jquery/jquery.min.js"></script>         
-
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>         
-
-        <footer class="footer text-center">
+        <footer class="footer">
             <div class="container">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#"> <i class="icon-social-facebook"></i> </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#"> <i class="icon-social-twitter"></i> </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#"> <i class="icon-social-github"></i> </a>
-                    </li>
+                <div class="footer__brand">
+                    <span class="footer__logo">🦋</span>
+                    <div>
+                        <strong>MyMuseum</strong>
+                        <small>archiving the ordinary</small>
+                    </div>
+                </div>
+                <ul class="footer__links">
+                    <li><a href="#story">Product story</a></li>
+                    <li><a href="#prototype">Prototype</a></li>
+                    <li><a href="#">Press kit</a></li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+                <p class="footer__note">Designed for curious collectors everywhere · © 2025 MyMuseum Studio</p>
             </div>
         </footer>
-        <!-- Plugin JavaScript -->         
 
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>         
-
-        <!-- Custom scripts for this template -->         
-
-        <script src="js/stylish-portfolio.min.js"></script>         
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
